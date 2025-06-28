@@ -96,10 +96,11 @@ export default function Login() {
         );
         if (user) {
           setForm(initialForm);
-          history.push('/main');
+          history.push('/success');
         } else {
           history.push('/error');
         }
+        console.log(res.data)
       });
   };
 
